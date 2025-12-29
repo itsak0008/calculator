@@ -15,7 +15,7 @@ function Home() {
 
         if (hasOperator) {
             try {
-                const result = display;
+                const result = Function(`return (${display})`)();
                 setsd(result);
             } catch {
 
