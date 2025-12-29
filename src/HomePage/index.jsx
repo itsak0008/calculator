@@ -10,7 +10,7 @@ function Home() {
 
 
     useEffect(() => {
-        const hasOperator = /[+-*/]/.test(display);
+        const hasOperator = /[+\-*/]/.test(display);
         // const endsWithOperator = /[+\-*/]$/.test(display.trim());
 
         if (hasOperator) {
